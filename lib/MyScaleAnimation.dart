@@ -1,4 +1,4 @@
-import 'package:custom_paint_and_animation/MyPainter.dart';
+import 'package:custom_paint_and_animation/stack_staggered_animation/CustomShape.dart';
 import 'package:flutter/material.dart';
 class MyScaleAnimation extends StatefulWidget {
   @override

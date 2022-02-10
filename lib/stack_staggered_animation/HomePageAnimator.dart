@@ -1,0 +1,35 @@
+import 'package:custom_paint_and_animation/stack_staggered_animation/home_page.dart';
+import 'package:flutter/material.dart';
+
+class HomePageAnimator extends StatefulWidget {
+  @override
+  _HomePageAnimatorState createState() => _HomePageAnimatorState();
+}
+
+class _HomePageAnimatorState extends State<HomePageAnimator>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = AnimationController(
+      duration: const Duration(seconds: 7),
+      vsync: this,
+    );
+    _controller.forward();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    _controller.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return HomePage(
+      controller: _controller,
+    );
+  }
+}
