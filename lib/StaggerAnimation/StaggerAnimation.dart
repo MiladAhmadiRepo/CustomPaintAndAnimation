@@ -1,5 +1,5 @@
 import 'package:custom_paint_and_animation/stack_staggered_animation/CustomShape.dart';
-import 'package:custom_paint_and_animation/stack_staggered_animation/paints.dart';
+import 'package:custom_paint_and_animation/stack_staggered_animation/PaintsPage.dart';
 import 'package:flutter/material.dart';
 
 class StaggerAnimation extends StatelessWidget {

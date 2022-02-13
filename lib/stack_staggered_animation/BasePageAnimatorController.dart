@@ -1,12 +1,12 @@
-import 'package:custom_paint_and_animation/stack_staggered_animation/home_page.dart';
+import 'package:custom_paint_and_animation/stack_staggered_animation/DrawPage.dart';
 import 'package:flutter/material.dart';
 
-class HomePageAnimator extends StatefulWidget {
+class BasePageAnimatorController extends StatefulWidget {
   @override
-  _HomePageAnimatorState createState() => _HomePageAnimatorState();
+  _BasePageAnimatorControllerState createState() => _BasePageAnimatorControllerState();
 }
 
-class _HomePageAnimatorState extends State<HomePageAnimator>
+class _BasePageAnimatorControllerState extends State<BasePageAnimatorController>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
 
@@ -28,8 +28,11 @@ class _HomePageAnimatorState extends State<HomePageAnimator>
 
   @override
   Widget build(BuildContext context) {
-    return HomePage(
+    final size = MediaQuery.of(context).size;
+
+    return DrawPage(
       controller: _controller,
+      screenSize: size,
     );
   }
 }

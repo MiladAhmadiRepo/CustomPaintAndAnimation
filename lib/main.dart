@@ -2,7 +2,7 @@ import 'package:custom_paint_and_animation/MyBookings.dart';
 import 'package:custom_paint_and_animation/stack_staggered_animation/CustomShape.dart';
 import 'package:custom_paint_and_animation/MyScaleAnimation.dart';
 import 'package:custom_paint_and_animation/StaggerAnimation/StaggerOriginal.dart';
-import 'package:custom_paint_and_animation/stack_staggered_animation/HomePageAnimator.dart';
+import 'package:custom_paint_and_animation/stack_staggered_animation/BasePageAnimatorController.dart';
 import 'package:flutter/material.dart';
 
 import 'StaggerAnimation/StaggerDemo.dart';
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       ),
       // home:   StaggerDemoOriginal(),
       // home:   StaggerDemo(),
-      home:   HomePageAnimator(),
+      home:   BasePageAnimatorController(),
     );
   }
 }
